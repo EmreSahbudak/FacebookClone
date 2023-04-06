@@ -11,7 +11,10 @@ import org.springframework.http.HttpStatus;
 @Getter
 public enum ErrorType {
 
-    USER_NOT_FOUND(2004,"Aradığınız Kitap adı bulunamadı",HttpStatus.NOT_FOUND),
+    ERROR_PASSWORD(2004,"Girmiş olduğunuz şifreler uyuşmamaktadır.",HttpStatus.NOT_FOUND),
+
+    ERROR_USERNAME(2005,"Bu kullanıcı adı daha önce kayıt edilmiştir. " +
+            "Lütfen farklı bir kullanıcı adı giriniz.",HttpStatus.BAD_REQUEST),
 
     ERROR_INVALID_TOKEN(3000,"Geçersiz Token",HttpStatus.UNAUTHORIZED),
 

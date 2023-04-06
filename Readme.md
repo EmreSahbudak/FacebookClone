@@ -25,3 +25,4 @@ buildscript {
     build.gradle dosyalarına ekledik.
     ### 1.8. AuthService için application.yml dosyasına veritabanı bağlantı bilgilerini girdik.
     ### 1.9. AuthService içinde auth entity class oluşturduk ve gerekli propertyleri tanımladık
+    ### 1.10. IAuthRepository interface kurduk ve içini ihtiyacımız olan metotlar ile doldurduk.
