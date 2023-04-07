@@ -20,7 +20,8 @@ public class RegisterRequestDto {
     String username;
     @NotEmpty
     @Size(min = 8)
-    //@Pattern(regexp = "")
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=*!])(?=\\S+$).{8,}$",
+            message = "Şifre en az bir büyük, bir küçük, harf, rakam, ve özel karakterden oluşmalıdır.")
     String password;
     String repassword;
     @Email

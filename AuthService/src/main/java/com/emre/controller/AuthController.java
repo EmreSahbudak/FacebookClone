@@ -20,7 +20,7 @@ public class AuthController {
 
     private final AuthService authService;
 
-    @GetMapping("login")
+    @PostMapping("login")
     public ResponseEntity<LoginResponseDto> login(@RequestBody @Valid LoginRequestDto dto){
         if (!authService.doLogin(dto))
             return ResponseEntity.ok(LoginResponseDto.builder()
@@ -35,7 +35,7 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<RegisterResponseDto> register(@RequestBody @Valid RegisterRequestDto dto){
-        if (dto.getPassword().equals(dto.getRepassword()))
+        if (!dto.getPassword().equals(dto.getRepassword()))
             throw new AuthException(ErrorType.ERROR_PASSWORD);
             authService.register(dto);
             return ResponseEntity.ok(RegisterResponseDto.builder()

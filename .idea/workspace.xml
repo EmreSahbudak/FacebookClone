@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a85b18b-623b-40df-9a96-a619c5ba82ea" name="Changes" comment="" />
+    <list default="true" id="7a85b18b-623b-40df-9a96-a619c5ba82ea" name="Changes" comment="login-register metotları tamamlandı">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/dto/request/UserProfileSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/manager/IUserProfileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/constants/EndPointList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/dto/request/UserProfileSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/mapper/IUserProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/repository/IUserProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/repository/entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/repository/entity/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/dto/request/RegisterRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/dto/request/RegisterRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,14 +46,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NzpOXKB9fmnPTwBij9a2NpU3Iw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,15 +74,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/AuthService/src/main/java/com/emre/utility"
+    "last_opened_file_path": "C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/UserService/src/main/java/com/emre"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\UserService\src\main\java\com\emre" />
+      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\UserService\src\main\resources" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\AuthService\src\main\java\com\emre\utility" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\AuthService\src\main\java\com\emre\exception" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.emre.dto.request" />
       <recent name="com.emre.constants" />
     </key>
   </component>
@@ -76,6 +118,18 @@
       <option name="presentableId" value="Default" />
       <updated>1680676732703</updated>
     </task>
+    <task id="LOCAL-00001" summary="login-register metotları tamamlandı">
+      <created>1680769769245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680769769245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="login-register metotları tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="login-register metotları tamamlandı" />
   </component>
 </project>
