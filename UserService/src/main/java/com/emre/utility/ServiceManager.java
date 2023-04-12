@@ -1,15 +1,15 @@
 package com.emre.utility;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ServiceManager <T,ID> implements  IService<T,ID>{
 
-    private final JpaRepository<T,ID> repository;
+    private final MongoRepository<T,ID> repository;
 
-    public ServiceManager(JpaRepository<T, ID> repository) {
+    public ServiceManager(MongoRepository<T, ID> repository) {
         this.repository = repository;
     }
 

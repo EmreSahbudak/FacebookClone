@@ -1,26 +1,22 @@
-package com.emre.repository.entity;
+package com.emre.dto.request;
 
+import com.emre.repository.entity.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-
-@Document
-public class UserProfile {
-
-    @Id
-    String id;
-    Long authid;
-    String username;
-    String email;
+public class UserProfileUpdateRequestDto {
+    @NotBlank
+    @Size(min = 3)
+    String token;
     String name;
     String surname;
     String phone;
@@ -28,14 +24,5 @@ public class UserProfile {
     String city;
     String avatar;
     Gender gender;
-
-
-
-
-
-
-
-
-
 
 }

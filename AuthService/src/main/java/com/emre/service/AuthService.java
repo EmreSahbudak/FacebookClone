@@ -26,12 +26,11 @@ public class AuthService extends ServiceManager<Auth,Long> {
         this.authRepository = authRepository;
         this.userProfileManager = userProfileManager;
     }
-    public boolean doLogin(LoginRequestDto dto){
-        Optional<Auth> auth=authRepository.findOptionalByUsernameAndPassword(
-                dto.getUsername(),dto.getPassword());
-        if (auth.isEmpty()) return  false;
-        return true;
+    public Optional<Auth> doLogin(LoginRequestDto dto){
+         return authRepository.findOptionalByUsernameAndPassword(
+                 dto.getUsername(),dto.getPassword());
     }
+
 
     public void register(RegisterRequestDto dto){
         if (authRepository.existsByUsername(dto.getUsername()))
@@ -42,6 +41,7 @@ public class AuthService extends ServiceManager<Auth,Long> {
                 .email(auth.getEmail())
                 .authid(auth.getId())
                 .build();
+
         /*Bu işlemden sonra feignclient bizim için veridğimiz prametreleri
         iletişime geçceğimiz userprofile save metoduna jsonobject olarak göderir
         ve o save metodunu calışmaısnı sağlar.*/
