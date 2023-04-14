@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AuthService/FaccebookClone.AuthService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AuthService/FaccebookClone.AuthService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConfigServer/FaccebookClone.ConfigServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ConfigServer/FaccebookClone.ConfigServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConfigServerGit/FaccebookClone.ConfigServerGit.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ConfigServerGit/FaccebookClone.ConfigServerGit.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/UserService/FaccebookClone.UserService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UserService/FaccebookClone.UserService.main.iml" />
     </modules>
   </component>

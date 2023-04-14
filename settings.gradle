@@ -4,4 +4,5 @@ include 'UserService'
 include 'PostService'
 include 'ChatService'
 include 'ConfigServer'
+include 'ConfigServerGit'
 
