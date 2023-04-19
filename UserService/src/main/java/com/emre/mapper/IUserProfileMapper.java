@@ -1,6 +1,7 @@
 package com.emre.mapper;
 
 import com.emre.dto.request.UserProfileSaveRequestDto;
+import com.emre.rabbitmq.model.CreateUserModel;
 import com.emre.repository.entity.UserProfile;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
@@ -12,4 +13,6 @@ public interface IUserProfileMapper {
     IUserProfileMapper INSTANCE= Mappers.getMapper(IUserProfileMapper.class);
 
     UserProfile toUserProfile(final UserProfileSaveRequestDto dto);
+
+    UserProfile toUserProfile(final CreateUserModel model);
 }

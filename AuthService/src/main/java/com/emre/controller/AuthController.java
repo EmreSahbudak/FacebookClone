@@ -9,7 +9,6 @@ import com.emre.exception.ErrorType;
 import com.emre.repository.entity.Auth;
 import com.emre.service.AuthService;
 import com.emre.utility.JwtTokenManager;
-import com.emre.utility.TokenCreator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +17,7 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
 
@@ -27,6 +26,12 @@ public class AuthController {
     //private final TokenCreator tokenCreator;
 
     private final JwtTokenManager jwtTokenManager;
+
+    @GetMapping("/getpage")
+    public ResponseEntity<String> getPage(){
+        return ResponseEntity.ok("Auth Serviceye ulaştınız.");
+    }
+
 
     @PostMapping("login")
     public ResponseEntity<LoginResponseDto> login(@RequestBody @Valid LoginRequestDto dto){

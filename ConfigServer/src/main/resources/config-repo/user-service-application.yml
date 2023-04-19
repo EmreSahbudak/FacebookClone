@@ -2,6 +2,16 @@ server:
   port: 9093
 
 spring:
+  zipkin:
+    enable: true
+    base-url: http://localhost:9411
+    service:
+      name: user-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: java7
+    password: root
   data:
     mongodb:
       host: localhost
@@ -9,3 +19,4 @@ spring:
       database: FacebookDB
       username: Java7User
       password: root
+

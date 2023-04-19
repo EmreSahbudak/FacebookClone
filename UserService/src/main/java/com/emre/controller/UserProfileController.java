@@ -12,11 +12,16 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/userprofile")
+@RequestMapping("api/v1/userprofile")
 @RequiredArgsConstructor
 public class UserProfileController {
 
     private final UserProfileService userProfileService;
+
+    @GetMapping("/getpage")
+    public ResponseEntity<String> getPage(){
+        return ResponseEntity.ok("UserProfile Serviceye ulaştınız.");
+    }
 
     @PostMapping("/save")
     public ResponseEntity<Void> save(@RequestBody @Valid UserProfileSaveRequestDto dto){
@@ -32,4 +37,39 @@ public class UserProfileController {
     public ResponseEntity<List<UserProfile>>  findAll(){
         return ResponseEntity.ok(userProfileService.findAll());
     }
+    @GetMapping("/getnametoupper")
+    public ResponseEntity<String>  getNameUpper(String name){
+        return ResponseEntity.ok(userProfileService.getNameToUpper(name));
+    }
+    @GetMapping("/clearcache")
+    public ResponseEntity<Void>  clearCache(){
+         userProfileService.clearCacheToUpper();
+         return ResponseEntity.ok().build();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
