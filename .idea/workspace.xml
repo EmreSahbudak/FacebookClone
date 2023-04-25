@@ -4,59 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a85b18b-623b-40df-9a96-a619c5ba82ea" name="Changes" comment="configserver git">
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/java/com/emre/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/config/rabbitmq/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/rabbitmq/model/CreateUserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/rabbitmq/producer/CreateUserProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/ElasticServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/constants/EndPointList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/exception/ElasticException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/exception/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/exception/ErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/repository/IUserProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/repository/entity/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/repository/entity/UserProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/utility/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/utility/JwtTokenManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/utility/ServiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/utility/TokenCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/rabbitmq/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/rabbitmq/consumer/CreateUserConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/rabbitmq/model/CreateUserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="7a85b18b-623b-40df-9a96-a619c5ba82ea" name="Changes" comment="postservice yazıldı">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ApiGatewayService/FaccebookClone.ApiGatewayService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ElasticService/FaccebookClone.ElasticService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/post-service-application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/dto/request/UserProfileDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/mapper/IUserProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/constants/EndPointList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/BegeniController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/YorumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/PostException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IBegeniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IKayitliPostlarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimPozisyonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IYorumBegeniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IYorumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Begeni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/KayitliPostlar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/PostResim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/PostResimPozisyon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Yorum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/YorumBegeni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/BegeniService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/KayitliPostlarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimpozisyonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/YorumBegeniService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/YorumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/JwtTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/TokenCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/manager/IElasticServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/auth-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/user-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/PostServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/UserServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/UserServiceApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/controller/UserProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/controller/UserProfileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/mapper/IUserProfileMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/mapper/IUserProfileMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/mapper/IUserProfileMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/mapper/IUserProfileMapperImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/service/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/service/UserProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build/generated/sources/annotationProcessor/java/main/com/emre/mapper/IUserProfileMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/generated/sources/annotationProcessor/java/main/com/emre/mapper/IUserProfileMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/mapper/IUserProfileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/mapper/IUserProfileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/UserServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/ElasticService/src/main/java/com/emre/repository/entity",
+    "last_opened_file_path": "C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/PostService/src/main/java/com/emre",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -109,11 +110,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\PostService\src\main\java\com\emre" />
+      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ConfigServer\src\main\resources\config-repo" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ElasticService\src\main\java\com\emre\repository\entity" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ElasticService\src\main\java\com\emre" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\UserService\src\main\java\com\emre" />
-      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ConfigServer\src\main\resources\config-repo" />
-      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\UserService\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ConfigServerGit\src\main\resources" />
@@ -131,20 +132,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
-    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emre.AuthServiceApplication" />
-      <module name="FaccebookClone.AuthService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.emre.ConfigServerGitApplication" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ElasticServiceApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.emre.ConfigServerApplication" />
       <module name="FaccebookClone.ConfigServer.main" />
@@ -164,6 +152,19 @@
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.emre.ConfigServerGitApplication" />
       <module name="FaccebookClone.ConfigServerGit.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.emre.ElasticServiceApplication" />
+      <module name="FaccebookClone.ElasticService.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.emre.*" />
@@ -202,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElasticServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.ConfigServerGitApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.AuthServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681452667653</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="redis, elasticsearch">
+      <created>1681895814235</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681895814235</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -280,7 +288,9 @@
     <MESSAGE value="JWTToken oluşturuldu." />
     <MESSAGE value="commit" />
     <MESSAGE value="configserver git" />
-    <option name="LAST_COMMIT_MESSAGE" value="configserver git" />
+    <MESSAGE value="redis, elasticsearch" />
+    <MESSAGE value="postservice yazıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="postservice yazıldı" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

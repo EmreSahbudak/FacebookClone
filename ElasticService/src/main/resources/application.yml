@@ -3,4 +3,4 @@ server:
 
 spring:
   elasticsearch:
-    uri: http://localhost:9200
+    uris: http://localhost:9200
