@@ -15,7 +15,7 @@ public class Runner {
     private final IElasticServiceManager elasticServiceManager;
 
     //uygulama ayağa kalkarken ilk işlem olarak calışmasını sağlıcak.
-    @PostConstruct
+    //@PostConstruct
     public void init(){
         userProfileService.findAll().forEach(x->{
             elasticServiceManager.save(x);

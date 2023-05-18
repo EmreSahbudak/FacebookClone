@@ -1,7 +1,9 @@
 package com.emre.service;
 
+import com.emre.dto.request.GetMyProfileRequestDto;
 import com.emre.dto.request.UserProfileSaveRequestDto;
 import com.emre.dto.request.UserProfileUpdateRequestDto;
+import com.emre.dto.response.GetMyProfileResponseDto;
 import com.emre.exception.ErrorType;
 import com.emre.exception.UserException;
 import com.emre.mapper.IUserProfileMapper;
@@ -73,5 +75,34 @@ public class UserProfileService extends ServiceManager<UserProfile,String> {
     @CacheEvict(value = "getnametoupper",allEntries = true)
     public void clearCacheToUpper(){
         System.out.println("Tüm cache i temizledim");
+    }
+
+    //react home page için profile bilgilerii cekilmesi
+    public GetMyProfileResponseDto getMyProfile(GetMyProfileRequestDto dto) {
+        Optional<Long> authid=jwtTokenManager.getIdFromToken(dto.getToken());
+        System.out.println(authid);
+        if (authid.isEmpty()){
+            throw new UserException(ErrorType.ERROR_INVALID_TOKEN);
+        }
+        Optional<UserProfile> userProfile=userProfileRepository.findOptionalByAuthid(authid.get());
+        if (userProfile.isEmpty())
+            throw new UserException(ErrorType.USER_NOT_FOUND);
+        return  GetMyProfileResponseDto.builder()
+                .about(userProfile.get().getPhone())
+                .name(userProfile.get().getName()+""+userProfile.get().getSurname())
+                .avatar(userProfile.get().getAvatar())
+                .username(userProfile.get().getUsername())
+                .build();
+    }
+
+    public UserProfile getOtherProfile(GetMyProfileRequestDto dto) {
+        Optional<UserProfile> userProfile=findById(dto.getUserid());
+        if (userProfile.isEmpty())
+            throw new UserException(ErrorType.USER_NOT_FOUND);
+        return userProfile.get();
+    }
+
+    public Optional<UserProfile> findByAuthId(Long authid){
+        return userProfileRepository.findOptionalByAuthid(authid);
     }
 }

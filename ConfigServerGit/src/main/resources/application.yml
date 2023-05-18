@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: "https://github.com/EmreSahbudak/java7configyml.git"
-        default-label: main
-        skip-ssl-validation: true
-        username: EmreSahbudak
-        password: ${GIT_JAVA7_PASSWORD}
+          default-label: main
+          skip-ssl-validation: true
+          username: EmreSahbudak
+          password: ${GIT_JAVA7_PASSWORD}

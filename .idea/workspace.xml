@@ -5,59 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a85b18b-623b-40df-9a96-a619c5ba82ea" name="Changes" comment="postservice yazıldı">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ApiGatewayService/FaccebookClone.ApiGatewayService.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ElasticService/FaccebookClone.ElasticService.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/post-service-application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/dto/request/UserProfileDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/mapper/IUserProfileMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/constants/EndPointList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/BegeniController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/YorumController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/ErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/exception/PostException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IBegeniRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IKayitliPostlarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimPozisyonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IYorumBegeniRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IYorumRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Begeni.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/KayitliPostlar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/PostResim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/PostResimPozisyon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Yorum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/YorumBegeni.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/BegeniService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/KayitliPostlarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimpozisyonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/YorumBegeniService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/YorumService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/JwtTokenManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/ServiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/utility/TokenCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/manager/IElasticServiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/PostService/FaccebookClone.PostService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/dto/request/GetMyProfileRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/dto/request/GetPostRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/dto/response/GetPostResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/manager/IUserProfileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/entity/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/JwtUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/UserServiceSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserRolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/dto/request/GetMyProfileRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/dto/response/GetMyProfileResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/repository/IUserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/repository/entity/UserRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserRolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/public/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/test/java/com/emre/service/UserProfileServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/test/java/com/emre/service/UserProfileUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/test/resources/userProfile.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/PostServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/UserServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/UserServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGatewayService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/emre/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/build/resources/main/config-repo/user-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServerGit/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServerGit/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServerGit/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServerGit/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServerGit/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServerGit/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/PostServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/PostServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/BegeniController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/controller/YorumController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/repository/IPostResimRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostResimService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PostService/src/main/java/com/emre/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/controller/UserProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/controller/UserProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/exception/ErrorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/exception/ErrorType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/exception/GlobalExceptionHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/service/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/classes/java/main/com/emre/service/UserProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build/generated/sources/annotationProcessor/java/main/com/emre/mapper/IUserProfileMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/generated/sources/annotationProcessor/java/main/com/emre/mapper/IUserProfileMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/config/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/ErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/ErrorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/service/UserProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/emre/utility/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,56 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ConfigServerGit">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/AuthService">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/UserService">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ApiGatewayService">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FaccebookClone" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FaccebookClone" type="f1a62948:ProjectNode" />
+                <item name="ApiGatewayService" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FaccebookClone" type="f1a62948:ProjectNode" />
+                <item name="ApiGatewayService" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FaccebookClone" type="f1a62948:ProjectNode" />
+                <item name="ApiGatewayService" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,33 +146,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/PostService/src/main/java/com/emre",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emre Sahbudak/Documents/BİLGEADAMBOOST/Spring/MicroService/FaccebookClone/PostService/src/main/java/com/emre/repository/entity&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\PostService\src\main\java\com\emre\repository\entity" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\PostService\src\main\java\com\emre" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ConfigServer\src\main\resources\config-repo" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ElasticService\src\main\java\com\emre\repository\entity" />
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ElasticService\src\main\java\com\emre" />
-      <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\UserService\src\main\java\com\emre" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Emre Sahbudak\Documents\BİLGEADAMBOOST\Spring\MicroService\FaccebookClone\ConfigServerGit\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.emre.utility" />
       <recent name="com.emre.dto.request" />
+      <recent name="com.emre.utility" />
       <recent name="com.emre.constants" />
     </key>
   </component>
@@ -132,13 +183,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ElasticServiceApplication">
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emre.ConfigServerApplication" />
-      <module name="FaccebookClone.ConfigServer.main" />
+  <component name="RunManager" selected="Gradle.UserProfileUnitTest">
+    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="CONFIG_SERVER" value="http://localhost:8888" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.emre.AuthServiceApplication" />
+      <module name="FaccebookClone.AuthService.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.emre.ConfigServerGitApplication" />
+          <option name="PATTERN" value="com.emre.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,9 +200,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigServerGitApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigServerGitApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
-        <env name="GIT_JAVA7_PASSWORD" value="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" />
+        <env name="GIT_JAVA7_PASSWORD" value="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" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.emre.ConfigServerGitApplication" />
       <module name="FaccebookClone.ConfigServerGit.main" />
@@ -162,52 +216,128 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElasticServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emre.ElasticServiceApplication" />
-      <module name="FaccebookClone.ElasticService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.emre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="UserProfileServiceTest.findByIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":UserService:test" />
+            <option value="--tests" />
+            <option value="&quot;com.emre.service.UserProfileServiceTest.findByIdTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emre.GatewayApplication" />
-      <module name="FaccebookClone.ApiGatewayService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.emre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="UserProfileServiceTest.getMyProfileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":UserService:test" />
+            <option value="--tests" />
+            <option value="&quot;com.emre.service.UserProfileServiceTest.getMyProfileTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emre.UserServiceApplication" />
-      <module name="FaccebookClone.UserService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.emre.ConfigServerGitApplication" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="UserProfileServiceTest.saveCSVTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":UserService:test" />
+            <option value="--tests" />
+            <option value="&quot;com.emre.service.UserProfileServiceTest.saveCSVTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserProfileUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":UserService:test" />
+            <option value="--tests" />
+            <option value="&quot;com.emre.service.UserProfileUnitTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserProfileUnitTest.getMyProfileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":UserService:test" />
+            <option value="--tests" />
+            <option value="&quot;com.emre.service.UserProfileUnitTest.getMyProfileTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ElasticServiceApplication" />
-        <item itemvalue="Application.GatewayApplication" />
-        <item itemvalue="Application.ConfigServerGitApplication" />
-        <item itemvalue="Application.ConfigServerApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Gradle.UserProfileUnitTest" />
+        <item itemvalue="Gradle.UserProfileUnitTest.getMyProfileTest" />
+        <item itemvalue="Gradle.UserProfileServiceTest.findByIdTest" />
+        <item itemvalue="Gradle.UserProfileServiceTest.saveCSVTest" />
+        <item itemvalue="Gradle.UserProfileServiceTest.getMyProfileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681895814235</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="postservice yazıldı">
+      <created>1682415157996</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682415157996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -301,5 +438,8 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FaccebookClone$UserProfileServiceTest.ic" NAME="UserProfileServiceTest Coverage Results" MODIFIED="1684391289411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

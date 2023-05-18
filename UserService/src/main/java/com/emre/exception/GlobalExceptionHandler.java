@@ -3,6 +3,7 @@ package com.emre.exception;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingPathVariableException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -71,6 +72,12 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorMessage> handleInvalidFormatException(
             InvalidFormatException exception) {
         ErrorType errorType = ErrorType.BAD_REQUEST;
+        return new ResponseEntity<>(createErrorMessage(errorType, exception), errorType.getHttpStatus());
+    }
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<ErrorMessage> handleInvalidFormatException(
+            AccessDeniedException exception) {
+        ErrorType errorType = ErrorType.ERROR_ACCESS_DENIED;
         return new ResponseEntity<>(createErrorMessage(errorType, exception), errorType.getHttpStatus());
     }
 
